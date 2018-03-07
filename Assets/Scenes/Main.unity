@@ -518,6 +518,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0352d5a79df3ed743af685e34b059f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SystemRotationSpeed: 100
+  SystemRotationSpeed: 10
   gravitationalForce: 10
   Splinter: {fileID: 1700091596774654, guid: 02778492cab177844805561fb2c948fa, type: 2}
