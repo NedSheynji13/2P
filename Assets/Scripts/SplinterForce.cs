@@ -11,6 +11,6 @@ public class SplinterForce : MonoBehaviour
 	
 	void Update () 
 	{
-        transform.Translate(Vector3.right);
+        transform.Translate(transform.right);
 	}
 }

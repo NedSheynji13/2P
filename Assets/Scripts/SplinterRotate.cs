@@ -6,13 +6,18 @@ public class SplinterRotate : MonoBehaviour
 {
     #region Variables
     public float rotationSpeed;
-    private float rotated = 0;
+    private Vector3 randomRot;
+    private float rotationspeed;
     #endregion
+
+    private void Start()
+    {
+        randomRot = new Vector3(Random.Range(-360, 360), Random.Range(-360, 360), Random.Range(-360, 360));
+    }
 
     void Update()
     {
-        rotated += rotationSpeed * Time.deltaTime;
-        transform.rotation = Quaternion.Euler(new Vector3(0, rotated, 0));
-        if (rotated > 360) rotated -= 360;
+        rotationspeed = Random.value * 200;
+        transform.RotateAround(transform.position, randomRot, Time.deltaTime * rotationspeed);
     }
 }

@@ -6,7 +6,7 @@ public class SunScript : MonoBehaviour
 {
     #region Variables
     public float systemRotationSpeed;
-    public float gravitationalForce = 1000;
+    public float gravitationalForce = 10;
     public GameObject Splinter;
     private bool isRunning = false;
     #endregion
@@ -25,10 +25,10 @@ public class SunScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        for (int i = 1; i <= transform.childCount; i++)
+        for (int i = 1; i < transform.childCount; i++)
         {
             float distance = Vector3.Distance(transform.position, transform.GetChild(i).transform.position);
-            float gforce = (gravitationalForce / Mathf.Pow(distance, 2)) * 66.74f;
+            float gforce = (gravitationalForce/ Mathf.Pow(distance, 2)) * 6674f;
 
             Vector3 direction = Vector3.Normalize(transform.position - transform.GetChild(i).transform.position);
 
