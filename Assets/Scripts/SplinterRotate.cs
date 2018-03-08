@@ -6,7 +6,7 @@ public class SplinterRotate : MonoBehaviour
 {
     #region Variables
     public float rotationSpeed;
-    public float rotated = 0;
+    private float rotated = 0;
     #endregion
 
     void Update()

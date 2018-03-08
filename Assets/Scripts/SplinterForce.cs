@@ -8,12 +8,9 @@ public class SplinterForce : MonoBehaviour
 
 	#endregion
 	
-	void Start ()
-	{
-
-	}
 	
 	void Update () 
 	{
+        transform.Translate(Vector3.right);
 	}
 }
