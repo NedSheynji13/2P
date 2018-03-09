@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33742527409337222}
   - component: {fileID: 23693202707889362}
   - component: {fileID: 114633187196579654}
-  - component: {fileID: 135677857256032060}
   m_Layer: 0
   m_Name: Splinter (1)
   m_TagString: Untagged
@@ -41,7 +40,6 @@ GameObject:
   - component: {fileID: 33682705162889908}
   - component: {fileID: 23438379793858278}
   - component: {fileID: 114129274106702508}
-  - component: {fileID: 135729086226252994}
   m_Layer: 0
   m_Name: Splinter (2)
   m_TagString: Untagged
@@ -76,7 +74,6 @@ GameObject:
   - component: {fileID: 33404141641693550}
   - component: {fileID: 23887432441396010}
   - component: {fileID: 114273983913116608}
-  - component: {fileID: 135576531762256950}
   m_Layer: 0
   m_Name: Splinter
   m_TagString: Untagged
@@ -91,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1700091596774654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -80}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4720104445251842}
@@ -268,11 +265,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1700091596774654}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6da2e1493ec1314a9940d4d8ee4b228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  direction: {x: 50, y: 50, z: 50}
+  power: 1
 --- !u!114 &114129274106702508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -309,39 +308,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
---- !u!135 &135576531762256950
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1740648273010368}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 7.307384
-  m_Center: {x: 0, y: -0.0000009536743, z: 0.0000030994415}
---- !u!135 &135677857256032060
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1297017541404520}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 7.307384
-  m_Center: {x: 0, y: -0.0000009536743, z: 0.0000030994415}
---- !u!135 &135729086226252994
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1547614604426092}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 7.307384
-  m_Center: {x: 0, y: -0.0000009536743, z: 0.0000030994415}
