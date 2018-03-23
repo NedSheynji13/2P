@@ -5,7 +5,7 @@ using UnityEngine;
 public class SplinterRotate : MonoBehaviour
 {
     #region Variables
-    public float rotationSpeed;
+    private float rotationSpeed;
     private Vector3 randomRot;
     private float rotationspeed;
     #endregion

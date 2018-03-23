@@ -5,7 +5,7 @@ using UnityEngine;
 public class SplinterSpawn : MonoBehaviour
 {
     #region Variables
-    public GameObject Splinter, Sun;
+    public GameObject Splinter, CubeSplinter, Sun;
     private bool isRunning = false;
     private Ray ray;
     #endregion
@@ -21,8 +21,12 @@ public class SplinterSpawn : MonoBehaviour
 
     private IEnumerator SpawnSplinter()
     {
-        Instantiate(Splinter, Spawn(), Quaternion.identity,  Sun.transform);
-        yield return new WaitForSeconds(0.5f);
+        float temp = Random.value;
+        if (temp > 0.2f)
+            Instantiate(Splinter, Spawn(), Quaternion.identity, Sun.transform);
+        else
+            Instantiate(CubeSplinter, Spawn(), Quaternion.identity, Sun.transform);
+        yield return new WaitForSeconds(0f);
         isRunning = false;
     }
 

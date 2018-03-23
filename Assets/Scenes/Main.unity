@@ -249,6 +249,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Splinter: {fileID: 1700091596774654, guid: 02778492cab177844805561fb2c948fa, type: 2}
+  CubeSplinter: {fileID: 1213319006756022, guid: 0c08dc03bc09d764d84f2a08eadba51f,
+    type: 2}
   Sun: {fileID: 1894382540}
 --- !u!135 &900320239
 SphereCollider:
@@ -260,7 +262,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 100
+  m_Radius: 50
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &900320240
 Transform:
@@ -450,15 +452,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4192245908186484, guid: 06dfd25d33501f646832fd87725257b5, type: 2}
       propertyPath: m_LocalScale.x
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4192245908186484, guid: 06dfd25d33501f646832fd87725257b5, type: 2}
       propertyPath: m_LocalScale.y
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4192245908186484, guid: 06dfd25d33501f646832fd87725257b5, type: 2}
       propertyPath: m_LocalScale.z
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 108982143766086836, guid: 06dfd25d33501f646832fd87725257b5,
         type: 2}
@@ -583,7 +585,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1894382540}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28f5770a2a577254885883b4bce7f463, type: 3}
   m_Name: 
