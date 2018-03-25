@@ -122,7 +122,13 @@ public class Collisionmanager : MonoBehaviour
                             ProjectBorders(tempz, ref z2Min, ref z2Max);
                         }
 
-
+                        //Intersection testing
+                        if (x2Max > x1Min && x1Max > x2Min && y2Max > y1Min && y1Max > y2Min && z2Max > z1Min && z1Max > z2Min)
+                        {
+                            Debug.Log("COLLISION!!!!");
+                            //unit1.GetComponent<SplinterForce>().direction *= -1;
+                            //unit2.GetComponent<SplinterForce>().direction *= -1;
+                        }
                     }
                 }
             }
