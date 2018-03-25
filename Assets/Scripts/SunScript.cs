@@ -11,7 +11,7 @@ public class SunScript : MonoBehaviour
 
     void Update()
     {
-        Star.rotationRates = new Vector3(0, systemRotationSpeed * Time.deltaTime, 0);
+        Star.rotationRates = new Vector3(0, systemRotationSpeed * Time.fixedDeltaTime, 0);
     }
 
     private void FixedUpdate()

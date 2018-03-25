@@ -8,10 +8,6 @@ public class Camerascript : MonoBehaviour
     public float sensivity;
     private Vector3 inputAngle;
     #endregion
-
-    void Start ()
-	{
-	}
 	
 	void Update () 
 	{

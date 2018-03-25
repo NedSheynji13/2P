@@ -11,13 +11,12 @@ public class SplinterForce : MonoBehaviour
 
     private void Start()
     {
-        transform.LookAt(transform.parent);
         direction = new Vector3(randomizer(), randomizer(), 0);
     }
 
     private void FixedUpdate () 
 	{
-        transform.Translate(direction * power * Time.deltaTime);
+        transform.Translate(direction * power * Time.fixedDeltaTime);
         if (Vector3.Distance(transform.position, transform.parent.position) > 1000)
             Destroy(gameObject);
 	}
