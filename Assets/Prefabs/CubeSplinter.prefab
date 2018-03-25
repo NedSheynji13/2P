@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6da2e1493ec1314a9940d4d8ee4b228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 50, y: 50, z: 50}
+  direction: {x: 0, y: 0, z: 0}
   power: 1
 --- !u!114 &114878421651332268
 MonoBehaviour:
